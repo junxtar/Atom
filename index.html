@@ -1,0 +1,58 @@
+<hmtl>
+  <head>
+    <title> 24최준영CGI FORM</title>
+    <script language = "JavaScript" src = "24_java.js"></script>
+  </head>
+  <body>
+    <b>텍스트 입력상자</b><hr>
+    학번을 입력하세요:
+    <input type="text" name="number"><br>
+    이름을 입력하세요:
+    <input type="text" name="username"><br><br>
+    ID를 입력하세요:
+    <input type="text" maxlength = "8" name = "userid"><br>
+    password를 입력하세요:
+    <input type="password" name = "password" size = 10><br><br>
+
+    <b>내부 스크립트</b><br>
+    <script language = "JavaScript">
+      /*간단한 메세지 나타내기
+      -객체를 사용하지 않고 메세지를 넣으면 에러잘생
+      -만약 따옴표가 겹치면 싱글과 더블로 구분하여 나타냄
+      */
+      document.write ("**여기는 body내 자바스크립트**")
+    </script><br><br>
+
+    <b>외부 스크립트</b><br>
+      <button type = "button" onclick = "test24()">외부</button>
+      <br><br>
+    <b>인라인 스트립트</b>
+      <hr color = "red">
+      <a href = "JavaScript:alert('환영합니다')">경고메세지</a>
+      <br><br>
+    <b>주석 연습</b><br>
+      <script language="javascript">
+        document.write("홈페이지") //메세지 나타내기
+        //이 문자열은 나타나지 않습니다.
+        /*이렇게 여러줄을 주석처리
+        할수 있어요 */
+        document.write("body 태그에 자바스크립트 넣기")
+        /* 자바스크립트 주석 넣기 연습
+        입니다.
+        신기해요 */
+      </script>
+      <br><br>
+      <b>for 문 연습</b><br>
+      <script language = "JavaScript">
+        for (i = 1; i <= 7; i++){
+          document.write("<font size=",i,">어서오세요.</font><br>")
+        }</script><br>
+        <b>if문 연습</b><br>
+        <script language = "JavaScript">
+          busy = "바쁨"
+          document.write("<b>당신은"+busy+"니까?<br>")
+          if (busy == "바쁨")document.write(busy + ": 지하철을 타세요.")
+          if (busy == "안 바쁨")document.write(busy + ": 버스를 타세요.")
+        </script>
+  </body>
+</hmtl>
